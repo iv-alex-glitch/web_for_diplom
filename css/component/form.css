@@ -1,0 +1,75 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space--xs);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    height: 60px;
+    border: 2px solid var(--color--black);
+    background: var(--color--white);
+    padding: 20px 16px 16px;
+    color: var(--color--grey);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1;
+    display: block;
+    width: 100%;
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 160px;
+    min-height: 160px;
+}
+
+.form__item:has(input:user-invalid) label,
+.form__item:has(textarea:user-invalid) label {
+    background: #dd0035;
+    color: var(--color--white);
+}
+
+.form__item:has(input:user-invalid) .form__item-error,
+.form__item:has(textarea:user-invalid) .form__item-error {
+    display: flex;
+}
+
+.form__item-error {
+    display: none;
+    gap: var(--space--xxxs);
+    color: #dd0035;
+    align-items: center;
+}
+
+.form__item-error svg {
+    width: 30px;
+}
+
+.form__item label {
+    position: relative;
+    padding: 4px 8px;
+    transform: rotate(-2deg) translateY(8px) translateX(8px);
+    display: inline-block;
+    background: #ffe555;
+    color: var(--color--grey);
+    font-weight: 600;
+}
+
+.form__item label span {
+    font-weight: 400;
+}
+
+.form__row {
+    display: flex;
+    gap: var(--space--xs);
+    flex-wrap: wrap;
+}
+
+button[type="submit"] {
+    justify-content: center;
+    min-height: 48px;
+    cursor: pointer;
+}

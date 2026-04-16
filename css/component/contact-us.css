@@ -1,0 +1,30 @@
+.main--contact-us {
+    background: var(--color--blue);
+}
+
+.contact-us {
+    position: relative;
+    z-index: 2;
+    background: var(--color--white);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space--m);   
+    padding: var(--space--m); 
+}
+
+.contact-us__text {
+    display: flex;
+    gap: var(--space--s);
+    flex-direction: column;
+}
+
+.contact-us__text .h4 {
+    opacity: .8;
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-us {
+        padding: var(--space--xl);
+        grid-template-columns: 1fr 1fr;
+    }
+}

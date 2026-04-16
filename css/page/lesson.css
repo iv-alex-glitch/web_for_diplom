@@ -1,0 +1,22 @@
+.lesson__main .module__heading {
+    background: var(--color--pink);
+}
+
+.lesson__main .module__intro-icon-bg {
+    fill: #deb7d5;
+}
+
+.lesson__container {
+    padding-top: var(--space--xl);
+}
+
+.lesson__container .line {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+}
+
+.lesson__container .line path {
+    fill: #deb7d5;
+}

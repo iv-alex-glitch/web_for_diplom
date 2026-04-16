@@ -1,0 +1,27 @@
+:root {
+    /* COLOR */
+    --color--white: #fff;
+    --color--black: #000;
+    --color--grey: #222;
+    --color--green: #bef2bd;
+    --color--yellow: #fff7cc;
+    --color--purpul: #c6d1ef;
+    --color--pink: #f5e9f2;
+    --color--blue: #bdcdf5;
+
+    /* FONT */
+    --font--family: "Oswald", "Verdana", "Helvetica", "Arial", sans-serif;
+    --font--family-main: "Lexend", "Verdana", "Helvetica", "Arial", sans-serif;
+
+    /* SPACE */
+    --space--xxs: 8px;
+    --space--xs: 12px;
+    --space--s: 16px;
+    --space--m: 24px;
+    --space--l: 32px;
+    --space--xl: 48px;
+    --space--xxl: 72px;
+
+    /* SWIPER */
+    --swiper-theme-color: var(--color--grey);
+}

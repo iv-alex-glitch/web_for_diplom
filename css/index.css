@@ -1,0 +1,25 @@
+@import "./lib/swiper-bundle.min.css";
+
+@import "./global/reset.css";
+@import "./global/variable.css";
+@import "./global/typography.css";
+@import "./global/global.css";
+
+@import "./component/footer.css";
+@import "./component/header.css";
+@import "./component/reverse.css";
+@import "./component/info-block.css";
+@import "./component/module.css";
+@import "./component/lesson-block.css";
+@import "./component/quiz.css";
+@import "./component/intro.css";
+@import "./component/gallery.css";
+@import "./component/contact-us.css";
+@import "./component/form.css";
+@import "./component/cards.css";
+@import "./component/books.css";
+
+@import "./page/training.css";
+@import "./page/class.css";
+@import "./page/module.css";
+@import "./page/lesson.css";

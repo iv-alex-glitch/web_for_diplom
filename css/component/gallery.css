@@ -1,0 +1,51 @@
+.gallery {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.swiper-slide img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.gallery--presentation {
+    max-height: 600px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--color--pink);
+}
+
+.gallery--quote {
+    background: var(--color--pink);
+    border-radius: 24px;
+}
+
+.gallery--quote .swiper-slide {
+    padding: 30px 20px;
+}
+
+.gallery--quote .swiper-pagination {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    left: auto;
+    bottom: auto;
+    width: auto;
+}
+
+.gallery--quote cite {
+    display: block;
+    font-style: normal;
+    margin-top: var(--space--xs);
+}

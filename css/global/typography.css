@@ -1,0 +1,44 @@
+.h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6, h6 {
+    font-family: var(--font--family);
+}
+
+.h1, h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.25;
+}
+
+.h2, h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.25;
+}
+
+.h3, h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+}
+
+.h4, h4 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.25;
+}
+
+.h5, h5 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.25;
+}
+
+.h6, h6 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+strong, b {
+    font-weight: 700;
+}
+

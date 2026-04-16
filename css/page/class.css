@@ -1,0 +1,62 @@
+.class__main {
+    background: var(--color--yellow);
+}
+
+.class__main .container {
+    position: relative;
+}
+
+.class__bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 0;
+}
+
+.class__main .module__intro  {
+    grid-template-columns: 100px auto;
+}
+
+.class__main .module__intro-icon {
+    max-width: 100px;
+}
+
+.class__main .module__intro-title {
+    align-self: center;
+}
+
+.class__main .module__intro-icon-bg {
+    fill: #fbd60e;
+}
+
+.class__main .line {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+}
+
+.class__main .line path {
+    fill: var(--color--white);
+}
+
+.class__main .module__list {
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.class__main .module__list-holder {
+    background: #ffeb7f;
+    padding: var(--space--s);
+}
+
+.class__main .module__list-item:hover {
+    background: #fbd60e;
+}
+
+.class__main .module__list-item-number {
+    background: none;
+}

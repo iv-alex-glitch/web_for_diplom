@@ -1,0 +1,59 @@
+.flashcard-container {
+    display: flex;
+    gap: 32px;    
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 480px;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 100%;
+}
+
+.flashcard{
+    width: 90%;
+    height: 220px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    margin: 0 auto;
+}
+
+.flashcard.is-flipped{
+    transform: rotateY(180deg);
+}
+
+.flashcard div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    /* background: linear-gradient(135deg, #f5f7fa, #c3cfe2); */
+    background: var(--color--pink);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+}
+
+.lesson-block .flashcard__buttons .button {
+    align-self: center;
+}
+
+.back{
+    transform: rotateY(180deg);
+}
+
+.flashcard__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}

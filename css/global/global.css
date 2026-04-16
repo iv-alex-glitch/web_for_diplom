@@ -1,0 +1,195 @@
+body {
+    min-width: 320px;
+    font: 400 16px/1.5 var(--font--family-main);
+    color: var(--color--grey);
+}
+
+#wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1248px;
+    padding: 0 20px;
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 4px;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.main {
+    padding-block: var(--space--l) var(--space--xxl);
+    position: relative;
+    overflow: hidden;
+}
+
+.main .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space--xl);
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--space--s);
+    margin-top: var(--space--s);
+}
+
+.button {
+    background: var(--color--grey);
+    text-decoration: none;
+    border: 2px solid var(--color--grey);
+    cursor: pointer;
+    padding: var(--space--xxs) var(--space--s);
+    color: var(--color--white);
+    display: flex;
+    gap: var(--space--xxs);
+    align-items: center;
+    transition: all .3s linear;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.button svg {
+    transition: all .3s linear;
+    width: 24px;
+    height: 24px;
+}
+
+.btn-link {
+    display: inline-flex;
+    gap: var(--space--xxs);
+    text-decoration: none; 
+}
+
+.btn-link .icon {
+    flex: 0 0 var(--space--l);
+    height: var(--space--l);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: currentColor;
+    border-radius: 50%;
+}
+
+.btn-link .icon svg {
+    max-width: 80%;
+}
+
+.btn-link .icon path {
+    fill: var(--color--white);
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+.button:hover {
+    background: transparent;
+    color: var(--color--grey);
+}
+
+.circle-arrow {
+    width: var(--space--xl);
+    height: var(--space--xl);
+    background: currentColor;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-arrow svg {
+    max-width: 80%;
+}
+
+.circle-arrow path {
+    fill: var(--color--white)
+}
+
+.breadcrumbs ul {
+    font-family: var(--font--family);
+    display: flex;
+    gap: var(--space--s);
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumbs li {
+    position: relative;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs li:has(a):after {
+    width: var(--space--m);
+    height: var(--space--xs);
+    display: inline-block;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none"><path d="M16.1999 35.9001C15.6999 32.3001 18.4999 32.5 19.4999 31.1L23.7999 27.9L28.3999 25.2001C29.0999 24.9001 29.6999 24.4 30.3999 24C29.7999 23.6 29.2999 23.1 28.5999 22.9L23.7999 20.3L19.2999 17.2001C17.8999 16.0001 15.7999 15.8 15.8999 12.4C18.9999 10.9 19.9999 12.6 21.6999 13.4L26.3999 16.2001L30.7999 19.5001C31.3999 20.1 32.2999 20.5 33.0999 21.3C33.7999 21.9 34.4999 22.9001 34.1999 24.1C34.2999 27.5 32.2999 27.7 30.8999 28.9L26.3999 31.9L21.5999 34.4001C20.0999 34.9001 18.7999 37.0001 16.1999 35.9001Z" fill="currentColor"/></svg>') no-repeat 50%/cover;
+    content: "";
+    margin: 0 calc(var(--space--xs) * -1) 0 0;
+}
+/* Контейнер для кнопки та меню */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Стиль кнопки */
+.dropbtn {
+  background-color: hsla(0, 0%, 100%, 0.123);
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Прихований контент меню (за замовчуванням) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 5;
+}
+
+/* Посилання всередині меню */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Зміна кольору посилань при наведенні */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Показати меню при наведенні */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Змінити колір кнопки, коли меню відкрите */
+.dropdown:hover .dropbtn {
+  background-color: #ffffff;
+}

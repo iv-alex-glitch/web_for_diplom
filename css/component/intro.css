@@ -1,0 +1,18 @@
+.intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space--l);
+}
+
+.intro__text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space--s);
+}
+
+
+@media only screen and (min-width: 568px) {
+    .intro {
+        grid-template-columns: auto 40%;
+    }
+}

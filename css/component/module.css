@@ -1,0 +1,80 @@
+
+
+.module__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space--s);
+    position: relative;
+    z-index: 2;
+}
+
+.module__list-holder {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space--s);
+    border-radius: 16px;
+    background: var(--color--purpul);
+    padding: var(--space--m);
+}
+
+.module__list ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space--xs);
+    padding: 0;
+    margin: 0;
+    list-style: none;    
+}
+
+.module__list-item {
+    background: var(--color--white);
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all .3s linear;
+}
+
+.module__list-item:hover {  
+    background: #a0b6f2;
+}
+
+.module__list-item:hover .module__list-item-text{
+    text-decoration: underline;  
+}
+
+.module__list-item-number {
+    flex: 0 0 64px;
+    text-align: center;
+    padding-block: var(--space--s);
+    min-height: 60px;
+    background: #a0b6f2;
+}
+
+.module__list-item-text {
+    align-self: center;
+    font-weight: bold;
+    display: block;
+    padding: var(--space--s);
+}
+
+.module__list-item .circle-arrow {
+    margin: 0 0 0 auto;
+    transition: all .3s linear;
+    align-self: center;
+    margin-right: var(--space--s);
+    background: none;
+}
+
+.module__list-item .circle-arrow path {
+    fill: currentColor;
+    transition: all .3s linear;
+}
+
+.module__list-item:hover .circle-arrow {
+    background: currentColor;
+}
+
+.module__list-item:hover .circle-arrow path {
+    fill: var(--color--white);
+}

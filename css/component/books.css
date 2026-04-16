@@ -1,0 +1,24 @@
+.books__main .module__heading {
+    background: var(--color--green);
+}
+
+.books__main .module__intro-icon-bg {
+    fill: #93e892;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-item {
+    max-width: 400px;
+}
+
+.book-item img {
+    width: 100%;
+    height: auto;
+}
