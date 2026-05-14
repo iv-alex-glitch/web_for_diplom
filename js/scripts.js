@@ -95,6 +95,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     galleryFunction();
 
-    flashcardFunction();
-
+    const flashcardElement = document.getElementById('flashcard');
+    if(flashcardElement) {
+        flashcardFunction();
+    }
 })
